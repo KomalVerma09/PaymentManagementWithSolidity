@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Payments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input{
+            width: 96%;
+        }
+        
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .output {
+            margin-top: 20px;
+            background-color: #eef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Payments Management Using Solidity</h1>
+    <div class="container">
+        <!-- insert Details -->
+        <h2>Insert Student Details</h2>
+        <label for="schoolId">School ID:</label>
+        <input type="number" id="schoolId" placeholder="Enter School ID">
+
+        <label for="roll">Roll Number:</label>
+        <input type="number" id="roll" placeholder="Enter Roll Number">
+
+        <label for="totalPayment">Total Payment:</label>
+        <input type="number" id="totalPayment" placeholder="Enter Total Payment">
+
+        <label for="paid">Amount Paid:</label>
+        <input type="number" id="paid" placeholder="Enter Paid Amount">
+
+
+        <button id="insertButton">Insert Details</button>
+
+
+        <!-- create fee -->
+        <h2>Create Monthly Fee</h2>
+        <label for="createFeeSchoolId">School ID:</label>
+        <input type="number" id="createFeeSchoolId" placeholder="Enter School ID">
+
+        <label for="createFeeRoll">Roll Number:</label>
+        <input type="number" id="createFeeRoll" placeholder="Enter Roll Number">
+
+        <label for="monthlyFee">Monthly Fee:</label>
+        <input type="number" id="monthlyFee" placeholder="Enter Monthly Fee">
+        <button id="makePaymentBtn">Make Payment</button>
+
+
+        <!-- pay fee -->
+        <h2>Receive Fee</h2>
+        <label for="receivedPaymentSchollId">School ID:</label>
+        <input type="number" id="receivedPaymentSchollId" placeholder="Enter School ID">
+
+        <label for="receivedPaymentRoll">Roll Number:</label>
+        <input type="number" id="receivedPaymentRoll" placeholder="Enter Roll Number">
+        
+        <label for="receivedAmount">Received Amount:</label>
+        <input type="number" id="paymentAmount" placeholder="Enter received payment">
+        <button id="paymentReceivedBtn">Payment Received</button>
+
+
+        <!--get Details  -->
+        <h2>Get Student Details</h2>
+        <label for="fetchSchoolId">School ID:</label>
+        <input type="number" id="fetchSchoolId" placeholder="Enter School ID">
+
+        <label for="fetchRoll">Roll Number:</label>
+        <input type="number" id="fetchRoll" placeholder="Enter Roll Number">
+
+        <button id="fetchButton">Fetch Details</button>
+
+        <div class="output" id="output"></div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
