@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 1.5em !important;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #4caf50;
+}
+
+.child1 {
+    padding: 20px;
+}
+
+.childContainer {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    width: 96%;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.output {
+    margin-top: 20px;
+    background-color: #eef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.parent-container {
+    display: grid;
+    row-gap: 10px;
+}
+
+@media screen and (min-width: 1048px) {
+    .parent-container {
+        grid-template-columns: 49% 49%;
+        gap: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1048px) {
+    .child1 {
+        order: 2;
+    }
+
+    .child2 {
+        order: 1;
+    }
+
+    h1 {
+        font-size: 1.5em !important;
+    }
+
+    h2 {
+        font-size: 1.3em !important;
+    }
+
+    .childContainer {
+        min-width: 400px;
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1047px) {
+    .childContainer {
+        width: 80%;
+    }
+}
+
+.school-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px 8px 0px 0px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.school-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.child2 {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.child2>* {
+    padding: 0 !important;
+    max-width: 100%;
+    /* Prevents children from exceeding parent width */
+    word-wrap: break-word;
+    /* Breaks long words if necessary */
+}
+
+
+.header-item {
+    text-transform: uppercase;
+}
+
+/* school item styles */
+.school-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.school-item:last-child {
+    border-bottom: none;
+}
+
+.school-id {
+    color: #28a745;
+    font-weight: bold;
+    text-align: right;
+}
+
+.secondContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
