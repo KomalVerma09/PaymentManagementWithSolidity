@@ -32,9 +32,8 @@ Want to try it out? Follow the testing instructions below:
 
 ---
 
-## 📝 Solidity Code 
-Here's the core Solidity code that powers this system:  
-[Explorer](https://sepolia.etherscan.io/address/0xCe9322e0c09636A637339B9ED71427207363AC30)
+## 📝 Solidity Code  
+Explore the core Solidity code and all associated transactions powering this system on [Etherscan](https://sepolia.etherscan.io/address/0xCe9322e0c09636A637339B9ED71427207363AC30).
 
 ---
 
